@@ -1,0 +1,9 @@
+spring:
+  config:
+    import: optional:file:env.yaml # Load environment variables
+
+  datasource:
+    driver-class-name: org.postgresql.Driver # Will fail when trying to connect to another type of DB.
+    url: jdbc:postgresql://${DB_HOST}/${DB_NAME}?stringtype=unspecified&reWriteBatchedInserts=true
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}

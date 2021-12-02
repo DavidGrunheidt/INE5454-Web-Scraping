@@ -1,0 +1,33 @@
+version: '3.1'
+
+services:
+  olympics-api:
+    image: olympics-api:latest
+    build:
+      context: .
+    container_name: olympics-api
+    depends_on:
+      - olympics-database
+    ports:
+      - '8080:8080'
+    environment:
+      DB_HOST: postgres:5432
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_NAME: olympics
+
+  olympics-database:
+    container_name: olympics-database
+    hostname: postgres
+    image: postgres:13.1-alpine
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: olympics
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
