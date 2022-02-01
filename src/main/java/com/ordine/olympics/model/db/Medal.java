@@ -1,4 +1,4 @@
-package com.ordine.olympics.model;
+package com.ordine.olympics.model.db;
 
 import lombok.*;
 

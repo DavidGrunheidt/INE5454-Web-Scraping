@@ -1,4 +1,4 @@
-package com.ordine.olympics.model;
+package com.ordine.olympics.model.db;
 
 import lombok.*;
 
@@ -14,6 +14,8 @@ public class Athlete {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "athlete_id")
     private Long id;
+
+    private String name;
 
     private int goldMedalsCount;
 

@@ -1,4 +1,4 @@
-package com.ordine.olympics.model;
+package com.ordine.olympics.model.db;
 
 import lombok.*;
 
@@ -8,11 +8,11 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @Builder
-@Table(name = "country", schema = "public")
-public class Country {
+@Table(name = "sport", schema = "public")
+public class Sport {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "country_id")
+    @Column(name = "sport_id")
     private Long id;
 
     private String name;
