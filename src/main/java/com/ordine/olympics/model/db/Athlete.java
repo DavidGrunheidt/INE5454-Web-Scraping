@@ -4,18 +4,19 @@ import lombok.*;
 
 import javax.persistence.*;
 
-@Data
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @Builder
+@Entity
 @Table(name = "athlete", schema = "public")
 public class Athlete {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "athlete_id")
-    private Long id;
+    @Column(nullable = false, unique = true)
+    private String nameSlug;
 
     private String name;
+
+    private String url;
 
     private int goldMedalsCount;
 
@@ -25,17 +26,11 @@ public class Athlete {
 
     private int participationsCount;
 
-    private String birthDate;
+    private String countryCode;
 
-    @ManyToOne
-    @JoinColumn(name = "country_id")
-    private Country country;
+    private String countryName;
 
-    @ManyToOne
-    @JoinColumn(name = "olympic_games_id")
-    private OlympicGames firstParticipation;
+    private String disciplineSlug;
 
-    @ManyToOne
-    @JoinColumn(name = "sport_id")
-    private Sport sport;
+    private String disciplineName;
 }
