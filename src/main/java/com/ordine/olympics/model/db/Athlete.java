@@ -12,25 +12,25 @@ import javax.persistence.*;
 public class Athlete {
     @Id
     @Column(nullable = false, unique = true)
-    private String nameSlug;
+    public String nameSlug;
 
-    private String name;
+    public String name;
 
-    private String url;
+    public String url;
 
-    private int goldMedalsCount;
+    public int goldMedalsCount;
 
-    private int silverMedalsCount;
+    public int silverMedalsCount;
 
-    private int bronzeMedalsCount;
+    public int bronzeMedalsCount;
 
-    private int participationsCount;
+    public int participationsCount;
 
-    private String countryCode;
+    public String countryCode;
 
-    private String countryName;
+    public String countryName;
 
-    private String disciplineSlug;
+    public String disciplineSlug;
 
-    private String disciplineName;
+    public String disciplineName;
 }
