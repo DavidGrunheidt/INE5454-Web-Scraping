@@ -5,7 +5,7 @@
 -- Dumped from database version 13.1
 -- Dumped by pg_dump version 14.2
 
--- Started on 2022-02-23 15:31:16 -03
+-- Started on 2022-02-23 16:42:47 -03
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -64,7 +64,7 @@ CREATE TABLE public.athlete (
 ALTER TABLE public.athlete OWNER TO postgres;
 
 --
--- TOC entry 201 (class 1259 OID 16395)
+-- TOC entry 201 (class 1259 OID 16391)
 -- Name: athlete_medal_search; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -357,6 +357,7 @@ INSERT INTO public.athlete VALUES ('annelies-cook', 0, 'USA', 'Estados Unidos da
 INSERT INTO public.athlete VALUES ('bruce-d-kimball', 0, 'USA', 'Estados Unidos da América', 'Saltos Ornamentais', 'discipline-saltos-ornamentais', 0, 'Bruce D. KIMBALL', 0, 0, '/pt/atletas/bruce-d-kimball');
 INSERT INTO public.athlete VALUES ('lyndsey-fry', 0, 'USA', 'Estados Unidos da América', 'Hóquei no gelo', 'discipline-hoquei-no-gelo', 0, 'Lyndsey FRY', 0, 0, '/pt/atletas/lyndsey-fry');
 INSERT INTO public.athlete VALUES ('cesar-cielo-filho', 0, 'BRA', 'Brasil', 'Natação', 'discipline-natacao', 0, 'Cesar CIELO FILHO', 0, 0, '/pt/atletas/cesar-cielo-filho');
+INSERT INTO public.athlete VALUES ('nicole-davis', 0, 'USA', 'Estados Unidos da América', 'Vôlei', 'discipline-volei', 0, 'Nicole DAVIS', 0, 0, '/pt/atletas/nicole-davis');
 INSERT INTO public.athlete VALUES ('amanda-furrer', 0, 'USA', 'Estados Unidos da América', 'Tiro Esportivo', 'discipline-tiro-esportivo', 0, 'Amanda FURRER', 0, 0, '/pt/atletas/amanda-furrer');
 INSERT INTO public.athlete VALUES ('mark-daniel-bradshaw', 0, 'USA', 'Estados Unidos da América', 'Saltos Ornamentais', 'discipline-saltos-ornamentais', 0, 'Mark Daniel BRADSHAW', 0, 0, '/pt/atletas/mark-daniel-bradshaw');
 INSERT INTO public.athlete VALUES ('sean-doherty', 0, 'USA', 'Estados Unidos da América', 'Biatlo', 'discipline-biatlo', 0, 'Sean DOHERTY', 0, 0, '/pt/atletas/sean-doherty');
@@ -495,7 +496,6 @@ INSERT INTO public.athlete VALUES ('francis-xavier-gorman', 0, 'USA', 'Estados U
 INSERT INTO public.athlete VALUES ('mariana-brochado', 0, 'BRA', 'Brasil', 'Natação', 'discipline-natacao', 0, 'Mariana BROCHADO', 0, 0, '/pt/atletas/mariana-brochado');
 INSERT INTO public.athlete VALUES ('eric-bernotas', 0, 'USA', 'Estados Unidos da América', 'Skeleton', 'discipline-skeleton', 0, 'Eric BERNOTAS', 0, 0, '/pt/atletas/eric-bernotas');
 INSERT INTO public.athlete VALUES ('jason-r-smith', 0, 'USA', 'Estados Unidos da América', 'Snowboard', 'discipline-snowboard', 0, 'Jason R. SMITH', 0, 0, '/pt/atletas/jason-r-smith');
-INSERT INTO public.athlete VALUES ('nicole-davis', 0, 'USA', 'Estados Unidos da América', 'Vôlei', 'discipline-volei', 0, 'Nicole DAVIS', 0, 0, '/pt/atletas/nicole-davis');
 INSERT INTO public.athlete VALUES ('sarah-c-blakeslee', 0, 'USA', 'Estados Unidos da América', 'Tiro Esportivo', 'discipline-tiro-esportivo', 0, 'Sarah C. BLAKESLEE', 0, 0, '/pt/atletas/sarah-c-blakeslee');
 INSERT INTO public.athlete VALUES ('morgan-hicks', 0, 'USA', 'Estados Unidos da América', 'Tiro Esportivo', 'discipline-tiro-esportivo', 0, 'Morgan HICKS', 0, 0, '/pt/atletas/morgan-hicks');
 INSERT INTO public.athlete VALUES ('jason-hedstrand', 0, 'USA', 'Estados Unidos da América', 'Patinação de velocidade', 'discipline-patinacao-de-velocidade', 0, 'Jason HEDSTRAND', 0, 0, '/pt/atletas/jason-hedstrand');
@@ -531,31 +531,6 @@ INSERT INTO public.athlete VALUES ('emily-samuelson', 0, 'USA', 'Estados Unidos 
 INSERT INTO public.athlete VALUES ('rachael-flatt', 0, 'USA', 'Estados Unidos da América', 'Patinação artística', 'discipline-patinacao-artistica', 0, 'Rachael FLATT', 0, 0, '/pt/atletas/rachael-flatt');
 INSERT INTO public.athlete VALUES ('james-edward-henry', 0, 'USA', 'Estados Unidos da América', 'Saltos Ornamentais', 'discipline-saltos-ornamentais', 0, 'James Edward HENRY', 0, 0, '/pt/atletas/james-edward-henry');
 INSERT INTO public.athlete VALUES ('megan-sweeney', 0, 'USA', 'Estados Unidos da América', 'Luge', 'discipline-luge', 0, 'Megan SWEENEY', 0, 0, '/pt/atletas/megan-sweeney');
-INSERT INTO public.athlete VALUES ('blake-wheeler', 0, 'USA', 'Estados Unidos da América', 'Hóquei no gelo', 'discipline-hoquei-no-gelo', 0, 'Blake WHEELER', 0, 0, '/pt/atletas/blake-wheeler');
-INSERT INTO public.athlete VALUES ('jill-craybas', 0, 'USA', 'Estados Unidos da América', 'Tênis', 'discipline-tenis', 0, 'Jill CRAYBAS', 0, 0, '/pt/atletas/jill-craybas');
-INSERT INTO public.athlete VALUES ('sidney-a-freudenstein', 0, 'USA', 'Estados Unidos da América', 'Ginástica Artística', 'discipline-ginastica-artistica', 0, 'Sidney A. FREUDENSTEIN', 0, 0, '/pt/atletas/sidney-a-freudenstein');
-INSERT INTO public.athlete VALUES ('carly-patterson', 0, 'USA', 'Estados Unidos da América', 'Ginástica Artística', 'discipline-ginastica-artistica', 0, 'Carly PATTERSON', 0, 0, '/pt/atletas/carly-patterson');
-INSERT INTO public.athlete VALUES ('brianne-mclaughlin', 0, 'USA', 'Estados Unidos da América', 'Hóquei no gelo', 'discipline-hoquei-no-gelo', 0, 'Brianne MCLAUGHLIN', 0, 0, '/pt/atletas/brianne-mclaughlin');
-INSERT INTO public.athlete VALUES ('louie-vito', 0, 'USA', 'Estados Unidos da América', 'Snowboard', 'discipline-snowboard', 0, 'Louie VITO', 0, 0, '/pt/atletas/louie-vito');
-INSERT INTO public.athlete VALUES ('brooks-orpik', 0, 'USA', 'Estados Unidos da América', 'Hóquei no gelo', 'discipline-hoquei-no-gelo', 0, 'Brooks ORPIK', 0, 0, '/pt/atletas/brooks-orpik');
-INSERT INTO public.athlete VALUES ('benjamin-barger', 0, 'USA', 'Estados Unidos da América', 'Vela', 'discipline-vela', 0, 'Benjamin BARGER', 0, 0, '/pt/atletas/benjamin-barger');
-INSERT INTO public.athlete VALUES ('adam-wheeler', 0, 'USA', 'Estados Unidos da América', 'Wrestling Greco-Roman', 'discipline-wrestling-greco-roman', 0, 'Adam WHEELER', 0, 0, '/pt/atletas/adam-wheeler');
-INSERT INTO public.athlete VALUES ('rock-allen', 0, 'USA', 'Estados Unidos da América', 'Boxe', 'discipline-boxe', 0, 'Rock ALLEN', 0, 0, '/pt/atletas/rock-allen');
-INSERT INTO public.athlete VALUES ('ben-wildman-tobriner', 0, 'USA', 'Estados Unidos da América', 'Natação', 'discipline-natacao', 0, 'Ben WILDMAN-TOBRINER', 0, 0, '/pt/atletas/ben-wildman-tobriner');
-INSERT INTO public.athlete VALUES ('martin-nothstein', 0, 'USA', 'Estados Unidos da América', 'Ciclismo De Pista', 'discipline-ciclismo-de-pista', 0, 'Martin NOTHSTEIN', 0, 0, '/pt/atletas/martin-nothstein');
-INSERT INTO public.athlete VALUES ('chloe-sutton', 0, 'USA', 'Estados Unidos da América', 'Natação', 'discipline-natacao', 0, 'Chloe SUTTON', 0, 0, '/pt/atletas/chloe-sutton');
-INSERT INTO public.athlete VALUES ('carlos-eduardo-honorato', 0, 'BRA', 'Brasil', 'Judô', 'discipline-judo', 0, 'Carlos Eduardo HONORATO', 0, 0, '/pt/atletas/carlos-eduardo-honorato');
-INSERT INTO public.athlete VALUES ('heather-mitts', 0, 'USA', 'Estados Unidos da América', 'Futebol', 'discipline-futebol', 0, 'Heather MITTS', 0, 0, '/pt/atletas/heather-mitts');
-INSERT INTO public.athlete VALUES ('debora-nunes', 0, 'BRA', 'Brasil', 'Taekwondo', 'discipline-taekwondo', 0, 'Debora NUNES', 0, 0, '/pt/atletas/debora-nunes');
-INSERT INTO public.athlete VALUES ('marissa-castelli', 0, 'USA', 'Estados Unidos da América', 'Patinação artística', 'discipline-patinacao-artistica', 0, 'Marissa CASTELLI', 0, 0, '/pt/atletas/marissa-castelli');
-INSERT INTO public.athlete VALUES ('jeremy-barrett', 0, 'USA', 'Estados Unidos da América', 'Patinação artística', 'discipline-patinacao-artistica', 0, 'Jeremy BARRETT', 0, 0, '/pt/atletas/jeremy-barrett');
-INSERT INTO public.athlete VALUES ('nayara-figueira', 0, 'BRA', 'Brasil', 'Nado Artístico', 'discipline-nado-sincronizado', 0, 'Nayara FIGUEIRA', 0, 0, '/pt/atletas/nayara-figueira');
-INSERT INTO public.athlete VALUES ('washington-silva', 0, 'BRA', 'Brasil', 'Boxe', 'discipline-boxe', 0, 'Washington SILVA', 0, 0, '/pt/atletas/washington-silva');
-INSERT INTO public.athlete VALUES ('graham-watanabe', 0, 'USA', 'Estados Unidos da América', 'Snowboard', 'discipline-snowboard', 0, 'Graham WATANABE', 0, 0, '/pt/atletas/graham-watanabe');
-INSERT INTO public.athlete VALUES ('amy-rodriguez', 0, 'USA', 'Estados Unidos da América', 'Futebol', 'discipline-futebol', 0, 'Amy RODRIGUEZ', 0, 0, '/pt/atletas/amy-rodriguez');
-INSERT INTO public.athlete VALUES ('james-warren-moore', 0, 'USA', 'Estados Unidos da América', 'Pentatlo Moderno', 'discipline-pentatlo-moderno', 0, 'James Warren MOORE', 0, 0, '/pt/atletas/james-warren-moore');
-INSERT INTO public.athlete VALUES ('meryl-davis', 0, 'USA', 'Estados Unidos da América', 'Patinação artística', 'discipline-patinacao-artistica', 0, 'Meryl DAVIS', 0, 0, '/pt/atletas/meryl-davis');
-INSERT INTO public.athlete VALUES ('robert-willis-cannon', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Robert Willis CANNON', 0, 0, '/pt/atletas/robert-willis-cannon');
 INSERT INTO public.athlete VALUES ('jo-ann-sevin', 0, 'USA', 'Estados Unidos da América', 'Tiro Esportivo', 'discipline-tiro-esportivo', 0, 'Jo Ann SEVIN', 0, 0, '/pt/atletas/jo-ann-sevin');
 INSERT INTO public.athlete VALUES ('wendy-lee-burge', 0, 'USA', 'Estados Unidos da América', 'Patinação artística', 'discipline-patinacao-artistica', 0, 'Wendy Lee BURGE', 0, 0, '/pt/atletas/wendy-lee-burge');
 INSERT INTO public.athlete VALUES ('john-ford-bower', 0, 'USA', 'Estados Unidos da América', 'Combinado nórdico', 'discipline-combinado-nordico', 0, 'John Ford BOWER', 0, 0, '/pt/atletas/john-ford-bower');
@@ -631,30 +606,16 @@ INSERT INTO public.athlete VALUES ('zach-apple', 0, 'USA', 'Estados Unidos da Am
 INSERT INTO public.athlete VALUES ('bryce-wettstein', 0, 'USA', 'Estados Unidos da América', 'Skate', 'discipline-skateboarding', 0, 'Bryce WETTSTEIN', 0, 0, '/pt/atletas/bryce-wettstein');
 INSERT INTO public.athlete VALUES ('john-brendan-sr-kelly', 0, 'USA', 'Estados Unidos da América', 'Remo', 'discipline-remo', 0, 'John Brendan Sr. KELLY', 0, 0, '/pt/atletas/john-brendan-sr-kelly');
 INSERT INTO public.athlete VALUES ('megan-huff', 0, 'USA', 'Estados Unidos da América', 'Basquete 3x3', 'discipline-basquetebol-3x3', 0, 'Megan HUFF', 0, 0, '/pt/atletas/megan-huff');
-INSERT INTO public.athlete VALUES ('kelvin-hoefler', 0, 'BRA', 'Brasil', 'Skate', 'discipline-skateboarding', 0, 'Kelvin HOEFLER', 0, 0, '/pt/atletas/kelvin-hoefler');
 INSERT INTO public.athlete VALUES ('ruth-hebard', 0, 'USA', 'Estados Unidos da América', 'Basquete 3x3', 'discipline-basquetebol-3x3', 0, 'Ruth HEBARD', 0, 0, '/pt/atletas/ruth-hebard');
-INSERT INTO public.athlete VALUES ('patrick-kivlehan', 0, 'USA', 'Estados Unidos da América', 'Beisebol Softbol', 'discipline-basebol-softbol', 0, 'Patrick KIVLEHAN', 0, 0, '/pt/atletas/patrick-kivlehan');
 INSERT INTO public.athlete VALUES ('ricardo-santos-1', 0, 'BRA', 'Brasil', 'Vôlei de Praia', 'discipline-volei-de-praia', 0, 'Ricardo SANTOS', 0, 0, '/pt/atletas/ricardo-santos-1');
 INSERT INTO public.athlete VALUES ('brittany-byrd', 0, 'USA', 'Estados Unidos da América', 'Basquete 3x3', 'discipline-basquetebol-3x3', 0, 'Brittany BYRD', 0, 0, '/pt/atletas/brittany-byrd');
 INSERT INTO public.athlete VALUES ('jordyn-barratt', 0, 'USA', 'Estados Unidos da América', 'Skate', 'discipline-skateboarding', 0, 'Jordyn BARRATT', 0, 0, '/pt/atletas/jordyn-barratt');
-INSERT INTO public.athlete VALUES ('eddy-alvarez', 0, 'USA', 'Estados Unidos da América', 'Beisebol Softbol', 'discipline-basebol-softbol', 0, 'Eddy ALVAREZ', 0, 0, '/pt/atletas/eddy-alvarez');
 INSERT INTO public.athlete VALUES ('gustavo-felipe', 0, 'BRA', 'Brasil', 'Skate', 'discipline-skateboarding', 0, 'Gustavo FELIPE', 0, 0, '/pt/atletas/gustavo-felipe');
 INSERT INTO public.athlete VALUES ('natasha-cloud', 0, 'USA', 'Estados Unidos da América', 'Basquete 3x3', 'discipline-basquetebol-3x3', 0, 'Natasha CLOUD', 0, 0, '/pt/atletas/natasha-cloud');
 INSERT INTO public.athlete VALUES ('ricardo-alves', 0, 'BRA', 'Brasil', 'Jogos Paralímpicos', 'discipline-paralympic', 0, 'Ricardo ALVES', 0, 0, '/pt/atletas/ricardo-alves');
 INSERT INTO public.athlete VALUES ('filipe-toledo', 0, 'BRA', 'Brasil', 'Surfe', 'discipline-surfing', 0, 'Filipe Toledo', 0, 0, '/pt/atletas/filipe-toledo');
 INSERT INTO public.athlete VALUES ('morgan-hurd', 0, 'USA', 'Estados Unidos da América', 'Ginástica Artística', 'discipline-ginastica-artistica', 0, 'Morgan Hurd', 0, 0, '/pt/atletas/morgan-hurd');
 INSERT INTO public.athlete VALUES ('michael-parsons', 0, 'USA', 'Estados Unidos da América', 'Patinação artística', 'discipline-patinacao-artistica', 0, 'Michael PARSONS', 0, 0, '/pt/atletas/michael-parsons');
-INSERT INTO public.athlete VALUES ('taylor-ellis-watson', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Taylor ELLIS-WATSON', 0, 0, '/pt/atletas/taylor-ellis-watson');
-INSERT INTO public.athlete VALUES ('mahau-suguimati', 0, 'BRA', 'Brasil', 'Atletismo', 'discipline-atletismo', 0, 'Mahau SUGUIMATI', 0, 0, '/pt/atletas/mahau-suguimati');
-INSERT INTO public.athlete VALUES ('christina-epps', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Christina EPPS', 0, 0, '/pt/atletas/christina-epps');
-INSERT INTO public.athlete VALUES ('solonei-da-silva', 0, 'BRA', 'Brasil', 'Atletismo', 'discipline-atletismo', 0, 'Solonei DA SILVA', 0, 0, '/pt/atletas/solonei-da-silva');
-INSERT INTO public.athlete VALUES ('tavis-bailey', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Tavis BAILEY', 0, 0, '/pt/atletas/tavis-bailey');
-INSERT INTO public.athlete VALUES ('pedro-luiz-de-oliveira', 0, 'BRA', 'Brasil', 'Atletismo', 'discipline-atletismo', 0, 'Pedro Luiz DE OLIVEIRA', 0, 0, '/pt/atletas/pedro-luiz-de-oliveira');
-INSERT INTO public.athlete VALUES ('heather-miller-koch', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Heather MILLER-KOCH', 0, 0, '/pt/atletas/heather-miller-koch');
-INSERT INTO public.athlete VALUES ('hugo-de-sousa', 0, 'BRA', 'Brasil', 'Atletismo', 'discipline-atletismo', 0, 'Hugo DE SOUSA', 0, 0, '/pt/atletas/hugo-de-sousa');
-INSERT INTO public.athlete VALUES ('flavia-de-lima', 0, 'BRA', 'Brasil', 'Atletismo', 'discipline-atletismo', 0, 'Flavia DE LIMA', 0, 0, '/pt/atletas/flavia-de-lima');
-INSERT INTO public.athlete VALUES ('alexander-russo', 0, 'BRA', 'Brasil', 'Atletismo', 'discipline-atletismo', 0, 'Alexander RUSSO', 0, 0, '/pt/atletas/alexander-russo');
-INSERT INTO public.athlete VALUES ('jeremy-taiwo', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Jeremy TAIWO', 0, 0, '/pt/atletas/jeremy-taiwo');
 INSERT INTO public.athlete VALUES ('ricardo-santos', 0, 'BRA', 'Brasil', 'Vela', 'discipline-vela', 0, 'Ricardo SANTOS', 0, 0, '/pt/atletas/ricardo-santos');
 INSERT INTO public.athlete VALUES ('micha-hancock', 0, 'USA', 'Estados Unidos da América', 'Vôlei', 'discipline-volei', 0, 'Micha HANCOCK', 0, 0, '/pt/atletas/micha-hancock');
 INSERT INTO public.athlete VALUES ('jaclyn-briggs', 0, 'USA', 'Estados Unidos da América', 'Hóquei sobre Grama', 'discipline-hoquei-sobre-grama', 0, 'Jaclyn BRIGGS', 0, 0, '/pt/atletas/jaclyn-briggs');
@@ -680,6 +641,7 @@ INSERT INTO public.athlete VALUES ('claudia-costa', 0, 'BRA', 'Brasil', 'Ginást
 INSERT INTO public.athlete VALUES ('peter-conover-hains', 0, 'USA', 'Estados Unidos da América', 'Pentatlo Moderno', 'discipline-pentatlo-moderno', 0, 'Peter Conover HAINS', 0, 0, '/pt/atletas/peter-conover-hains');
 INSERT INTO public.athlete VALUES ('chan-frank-coulter', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Chan Frank COULTER', 0, 0, '/pt/atletas/chan-frank-coulter');
 INSERT INTO public.athlete VALUES ('john-percy-hagerman', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'John Percy HAGERMAN', 0, 0, '/pt/atletas/john-percy-hagerman');
+INSERT INTO public.athlete VALUES ('rob-crane', 0, 'USA', 'Estados Unidos da América', 'Vela', 'discipline-vela', 0, 'Rob CRANE', 0, 0, '/pt/atletas/rob-crane');
 INSERT INTO public.athlete VALUES ('anton-heida', 0, 'USA', 'Estados Unidos da América', 'Ginástica Artística', 'discipline-ginastica-artistica', 0, 'Anton HEIDA', 0, 0, '/pt/atletas/anton-heida');
 INSERT INTO public.athlete VALUES ('krishnateja-avvari', 0, 'USA', 'Estados Unidos da América', 'Tênis de Mesa', 'discipline-tenis-de-mesa', 0, 'Krishnateja AVVARI', 0, 0, '/pt/atletas/krishnateja-avvari');
 INSERT INTO public.athlete VALUES ('aaron-matthews', 0, 'USA', 'Estados Unidos da América', 'Rugby Sevens', 'discipline-rugby-sevens', 0, 'Aaron MATTHEWS', 0, 0, '/pt/atletas/aaron-matthews');
@@ -705,31 +667,6 @@ INSERT INTO public.athlete VALUES ('david-l-romansky', 0, 'USA', 'Estados Unidos
 INSERT INTO public.athlete VALUES ('gerald-ray-holan', 0, 'USA', 'Estados Unidos da América', 'Natação', 'discipline-natacao', 0, 'Gerald Ray HOLAN', 0, 0, '/pt/atletas/gerald-ray-holan');
 INSERT INTO public.athlete VALUES ('judith-theresa-roberts', 0, 'USA', 'Estados Unidos da América', 'Natação', 'discipline-natacao', 0, 'Judith Theresa ROBERTS', 0, 0, '/pt/atletas/judith-theresa-roberts');
 INSERT INTO public.athlete VALUES ('richard-lloyd-george', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Richard Lloyd GEORGE', 0, 0, '/pt/atletas/richard-lloyd-george');
-INSERT INTO public.athlete VALUES ('lawrence-thomas-hart', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Lawrence Thomas HART', 0, 0, '/pt/atletas/lawrence-thomas-hart');
-INSERT INTO public.athlete VALUES ('samuel-linn-colson', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Samuel Linn COLSON', 0, 0, '/pt/atletas/samuel-linn-colson');
-INSERT INTO public.athlete VALUES ('robert-tomlinson-wheeler-iii', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Robert Tomlinson WHEELER III.', 0, 0, '/pt/atletas/robert-tomlinson-wheeler-iii');
-INSERT INTO public.athlete VALUES ('wendy-carol-koenig-knudson', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Wendy Carol KOENIG-KNUDSON', 0, 0, '/pt/atletas/wendy-carol-koenig-knudson');
-INSERT INTO public.athlete VALUES ('robenilson-vieira-de-jesus', 0, 'BRA', 'Brasil', 'Boxe', 'discipline-boxe', 0, 'Robenilson VIEIRA DE JESUS', 0, 0, '/pt/atletas/robenilson-vieira-de-jesus');
-INSERT INTO public.athlete VALUES ('edward-pennington-ballinger', 0, 'USA', 'Estados Unidos da América', 'Esgrima', 'discipline-esgrima', 0, 'Edward Pennington BALLINGER', 0, 0, '/pt/atletas/edward-pennington-ballinger');
-INSERT INTO public.athlete VALUES ('roseli-feitosa', 0, 'BRA', 'Brasil', 'Boxe', 'discipline-boxe', 0, 'Roseli FEITOSA', 0, 0, '/pt/atletas/roseli-feitosa');
-INSERT INTO public.athlete VALUES ('mary-killman', 0, 'USA', 'Estados Unidos da América', 'Nado Artístico', 'discipline-nado-sincronizado', 0, 'Mary KILLMAN', 0, 0, '/pt/atletas/mary-killman');
-INSERT INTO public.athlete VALUES ('max-pacioretty', 0, 'USA', 'Estados Unidos da América', 'Hóquei no gelo', 'discipline-hoquei-no-gelo', 0, 'Max PACIORETTY', 0, 0, '/pt/atletas/max-pacioretty');
-INSERT INTO public.athlete VALUES ('carolyn-steinseifer', 0, 'USA', 'Estados Unidos da América', 'Natação', 'discipline-natacao', 0, 'Carolyn STEINSEIFER', 0, 0, '/pt/atletas/carolyn-steinseifer');
-INSERT INTO public.athlete VALUES ('leigh-ann-fetter', 0, 'USA', 'Estados Unidos da América', 'Natação', 'discipline-natacao', 0, 'Leigh Ann FETTER', 0, 0, '/pt/atletas/leigh-ann-fetter');
-INSERT INTO public.athlete VALUES ('benjamin-funk', 0, 'USA', 'Estados Unidos da América', 'Boxe', 'discipline-boxe', 0, 'Benjamin FUNK', 0, 0, '/pt/atletas/benjamin-funk');
-INSERT INTO public.athlete VALUES ('whitney-l-hedgepeth', 0, 'USA', 'Estados Unidos da América', 'Natação', 'discipline-natacao', 0, 'Whitney L. HEDGEPETH', 0, 0, '/pt/atletas/whitney-l-hedgepeth');
-INSERT INTO public.athlete VALUES ('daniel-michael-cantore', 0, 'USA', 'Estados Unidos da América', 'Levantamento de Peso', 'discipline-levantamento-de-peso', 0, 'Daniel Michael CANTORE', 0, 0, '/pt/atletas/daniel-michael-cantore');
-INSERT INTO public.athlete VALUES ('david-herman', 0, 'USA', 'Estados Unidos da América', 'Ciclismo BMX Racing', 'discipline-ciclismo-bmx-racing', 0, 'David HERMAN', 0, 0, '/pt/atletas/david-herman');
-INSERT INTO public.athlete VALUES ('kayla-bashore-smedley', 0, 'USA', 'Estados Unidos da América', 'Hóquei sobre Grama', 'discipline-hoquei-sobre-grama', 0, 'Kayla BASHORE-SMEDLEY', 0, 0, '/pt/atletas/kayla-bashore-smedley');
-INSERT INTO public.athlete VALUES ('amy-tran-swensen', 0, 'USA', 'Estados Unidos da América', 'Hóquei sobre Grama', 'discipline-hoquei-sobre-grama', 0, 'Amy TRAN-SWENSEN', 0, 0, '/pt/atletas/amy-tran-swensen');
-INSERT INTO public.athlete VALUES ('martin-william-liquori', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Martin William LIQUORI', 0, 0, '/pt/atletas/martin-william-liquori');
-INSERT INTO public.athlete VALUES ('leandro-cunha', 0, 'BRA', 'Brasil', 'Judô', 'discipline-judo', 0, 'Leandro CUNHA', 0, 0, '/pt/atletas/leandro-cunha');
-INSERT INTO public.athlete VALUES ('kaye-marie-hall', 0, 'USA', 'Estados Unidos da América', 'Natação', 'discipline-natacao', 0, 'Kaye Marie HALL', 0, 0, '/pt/atletas/kaye-marie-hall');
-INSERT INTO public.athlete VALUES ('erin-blanchard', 0, 'USA', 'Estados Unidos da América', 'Ginástica de Trampolim', 'discipline-ginastica-de-trampolim', 0, 'Erin BLANCHARD', 0, 0, '/pt/atletas/erin-blanchard');
-INSERT INTO public.athlete VALUES ('chris-estrada', 0, 'USA', 'Estados Unidos da América', 'Ginástica de Trampolim', 'discipline-ginastica-de-trampolim', 0, 'Chris ESTRADA', 0, 0, '/pt/atletas/chris-estrada');
-INSERT INTO public.athlete VALUES ('robert-henry-christopherson', 0, 'USA', 'Estados Unidos da América', 'Boxe', 'discipline-boxe', 0, 'Robert Henry CHRISTOPHERSON', 0, 0, '/pt/atletas/robert-henry-christopherson');
-INSERT INTO public.athlete VALUES ('cody-mattern', 0, 'USA', 'Estados Unidos da América', 'Esgrima', 'discipline-esgrima', 0, 'Cody MATTERN', 0, 0, '/pt/atletas/cody-mattern');
-INSERT INTO public.athlete VALUES ('jason-rogers', 0, 'USA', 'Estados Unidos da América', 'Esgrima', 'discipline-esgrima', 0, 'Jason ROGERS', 0, 0, '/pt/atletas/jason-rogers');
 INSERT INTO public.athlete VALUES ('kevin-hall', 0, 'USA', 'Estados Unidos da América', 'Vela', 'discipline-vela', 0, 'Kevin HALL', 0, 0, '/pt/atletas/kevin-hall');
 INSERT INTO public.athlete VALUES ('john-keith-russel', 0, 'USA', 'Estados Unidos da América', 'Saltos Ornamentais', 'discipline-saltos-ornamentais', 0, 'John Keith RUSSEL', 0, 0, '/pt/atletas/john-keith-russel');
 INSERT INTO public.athlete VALUES ('susanne-gossick', 0, 'USA', 'Estados Unidos da América', 'Saltos Ornamentais', 'discipline-saltos-ornamentais', 0, 'Susanne GOSSICK', 0, 0, '/pt/atletas/susanne-gossick');
@@ -769,7 +706,6 @@ INSERT INTO public.athlete VALUES ('geena-gall', 0, 'USA', 'Estados Unidos da Am
 INSERT INTO public.athlete VALUES ('sharon-lynn-calvert', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Sharon Lynn CALVERT', 0, 0, '/pt/atletas/sharon-lynn-calvert');
 INSERT INTO public.athlete VALUES ('isaac-j-anderson', 0, 'USA', 'Estados Unidos da América', 'Wrestling Greco-Roman', 'discipline-wrestling-greco-roman', 0, 'Isaac J. ANDERSON', 0, 0, '/pt/atletas/isaac-j-anderson');
 INSERT INTO public.athlete VALUES ('ana-barbachan', 0, 'BRA', 'Brasil', 'Vela', 'discipline-vela', 0, 'Ana BARBACHAN', 0, 0, '/pt/atletas/ana-barbachan');
-INSERT INTO public.athlete VALUES ('rob-crane', 0, 'USA', 'Estados Unidos da América', 'Vela', 'discipline-vela', 0, 'Rob CRANE', 0, 0, '/pt/atletas/rob-crane');
 INSERT INTO public.athlete VALUES ('shawn-rodney-sheldon', 0, 'USA', 'Estados Unidos da América', 'Wrestling Greco-Roman', 'discipline-wrestling-greco-roman', 0, 'Shawn Rodney SHELDON', 0, 0, '/pt/atletas/shawn-rodney-sheldon');
 INSERT INTO public.athlete VALUES ('kent-douglas-vosler', 0, 'USA', 'Estados Unidos da América', 'Saltos Ornamentais', 'discipline-saltos-ornamentais', 0, 'Kent Douglas VOSLER', 0, 0, '/pt/atletas/kent-douglas-vosler');
 INSERT INTO public.athlete VALUES ('scott-m-mckinley', 0, 'USA', 'Estados Unidos da América', 'Ciclismo de Estrada', 'discipline-ciclismo-de-estrada', 0, 'Scott M. MCKINLEY', 0, 0, '/pt/atletas/scott-m-mckinley');
@@ -860,6 +796,7 @@ INSERT INTO public.athlete VALUES ('karol-damon', 0, 'USA', 'Estados Unidos da A
 INSERT INTO public.athlete VALUES ('barbara-a-brown', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Barbara A. BROWN', 0, 0, '/pt/atletas/barbara-a-brown');
 INSERT INTO public.athlete VALUES ('daniel-hernandes', 0, 'BRA', 'Brasil', 'Judô', 'discipline-judo', 0, 'Daniel HERNANDES', 0, 0, '/pt/atletas/daniel-hernandes');
 INSERT INTO public.athlete VALUES ('carlos-arthur-nuzman', 0, 'BRA', 'Brasil', 'Vôlei', 'discipline-volei', 0, 'Carlos Arthur NUZMAN', 0, 0, '/pt/atletas/carlos-arthur-nuzman');
+INSERT INTO public.athlete VALUES ('jason-smith-1', 0, 'USA', 'Estados Unidos da América', 'Curling', 'discipline-curling', 0, 'Jason SMITH', 0, 0, '/pt/atletas/jason-smith-1');
 INSERT INTO public.athlete VALUES ('mary-patricia-willard', 0, 'USA', 'Estados Unidos da América', 'Saltos Ornamentais', 'discipline-saltos-ornamentais', 0, 'Mary Patricia WILLARD', 0, 0, '/pt/atletas/mary-patricia-willard');
 INSERT INTO public.athlete VALUES ('gregor-richard-weiss', 0, 'USA', 'Estados Unidos da América', 'Ginástica Artística', 'discipline-ginastica-artistica', 0, 'Gregor Richard WEISS', 0, 0, '/pt/atletas/gregor-richard-weiss');
 INSERT INTO public.athlete VALUES ('vince-carter', 0, 'USA', 'Estados Unidos da América', 'Basquete', 'discipline-basquetebol', 0, 'Vince CARTER', 0, 0, '/pt/atletas/vince-carter');
@@ -907,7 +844,6 @@ INSERT INTO public.athlete VALUES ('helena-scutt', 0, 'USA', 'Estados Unidos da 
 INSERT INTO public.athlete VALUES ('iris-sing', 0, 'BRA', 'Brasil', 'Taekwondo', 'discipline-taekwondo', 0, 'Iris SING', 0, 0, '/pt/atletas/iris-sing');
 INSERT INTO public.athlete VALUES ('jessica-jerome', 0, 'USA', 'Estados Unidos da América', 'Salto de esqui', 'discipline-salto-de-esqui', 0, 'Jessica JEROME', 0, 0, '/pt/atletas/jessica-jerome');
 INSERT INTO public.athlete VALUES ('jessica-javelet', 0, 'USA', 'Estados Unidos da América', 'Rugby Sevens', 'discipline-rugby-sevens', 0, 'Jessica JAVELET', 0, 0, '/pt/atletas/jessica-javelet');
-INSERT INTO public.athlete VALUES ('jason-smith-1', 0, 'USA', 'Estados Unidos da América', 'Curling', 'discipline-curling', 0, 'Jason SMITH', 0, 0, '/pt/atletas/jason-smith-1');
 INSERT INTO public.athlete VALUES ('joedison-teixeira', 0, 'BRA', 'Brasil', 'Boxe', 'discipline-boxe', 0, 'Joedison TEIXEIRA', 0, 0, '/pt/atletas/joedison-teixeira');
 INSERT INTO public.athlete VALUES ('juan-nogueira', 0, 'BRA', 'Brasil', 'Boxe', 'discipline-boxe', 0, 'Juan NOGUEIRA', 0, 0, '/pt/atletas/juan-nogueira');
 INSERT INTO public.athlete VALUES ('meghan-klingenberg', 0, 'USA', 'Estados Unidos da América', 'Futebol', 'discipline-futebol', 0, 'Meghan KLINGENBERG', 0, 0, '/pt/atletas/meghan-klingenberg');
@@ -1091,6 +1027,7 @@ INSERT INTO public.athlete VALUES ('kayla-di-cello', 0, 'USA', 'Estados Unidos d
 INSERT INTO public.athlete VALUES ('bruno-mendonca-1', 0, 'BRA', 'Brasil', 'Judô', 'discipline-judo', 0, 'Bruno MENDONCA', 0, 0, '/pt/atletas/bruno-mendonca-1');
 INSERT INTO public.athlete VALUES ('mitchell-jay-gaylord', 0, 'USA', 'Estados Unidos da América', 'Ginástica Artística', 'discipline-ginastica-artistica', 0, 'Mitchell Jay GAYLORD', 0, 0, '/pt/atletas/mitchell-jay-gaylord');
 INSERT INTO public.athlete VALUES ('richard-fellers', 0, 'USA', 'Estados Unidos da América', 'Hipismo', 'discipline-equestre', 0, 'Richard FELLERS', 0, 0, '/pt/atletas/richard-fellers');
+INSERT INTO public.athlete VALUES ('steffen-peters', 0, 'USA', 'Estados Unidos da América', 'Hipismo', 'discipline-equestre', 0, 'Steffen PETERS', 0, 0, '/pt/atletas/steffen-peters');
 INSERT INTO public.athlete VALUES ('david-luther-roberts', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'David Luther ROBERTS', 0, 0, '/pt/atletas/david-luther-roberts');
 INSERT INTO public.athlete VALUES ('duncan-e-macdonald', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Duncan E. MACDONALD', 0, 0, '/pt/atletas/duncan-e-macdonald');
 INSERT INTO public.athlete VALUES ('deborah-elaine-sapenter', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Deborah Elaine SAPENTER', 0, 0, '/pt/atletas/deborah-elaine-sapenter');
@@ -1226,7 +1163,6 @@ INSERT INTO public.athlete VALUES ('raven-saunders', 0, 'USA', 'Estados Unidos d
 INSERT INTO public.athlete VALUES ('sarah-robles', 0, 'USA', 'Estados Unidos da América', 'Levantamento de Peso', 'discipline-levantamento-de-peso', 0, 'Sarah ROBLES', 0, 0, '/pt/atletas/sarah-robles');
 INSERT INTO public.athlete VALUES ('megan-rapinoe', 0, 'USA', 'Estados Unidos da América', 'Futebol', 'discipline-futebol', 0, 'Megan RAPINOE', 0, 0, '/pt/atletas/megan-rapinoe');
 INSERT INTO public.athlete VALUES ('colleen-quigley', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Colleen QUIGLEY', 0, 0, '/pt/atletas/colleen-quigley');
-INSERT INTO public.athlete VALUES ('steffen-peters', 0, 'USA', 'Estados Unidos da América', 'Hipismo', 'discipline-equestre', 0, 'Steffen PETERS', 0, 0, '/pt/atletas/steffen-peters');
 INSERT INTO public.athlete VALUES ('kelley-ohara', 0, 'USA', 'Estados Unidos da América', 'Futebol', 'discipline-futebol', 0, 'Kelley OHARA', 0, 0, '/pt/atletas/kelley-ohara');
 INSERT INTO public.athlete VALUES ('ryan-murphy', 0, 'USA', 'Estados Unidos da América', 'Natação', 'discipline-natacao', 0, 'Ryan MURPHY', 0, 0, '/pt/atletas/ryan-murphy');
 INSERT INTO public.athlete VALUES ('nathalie-moellhausen', 0, 'BRA', 'Brasil', 'Esgrima', 'discipline-esgrima', 0, 'Nathalie MOELLHAUSEN', 0, 0, '/pt/atletas/nathalie-moellhausen');
@@ -1686,10 +1622,85 @@ INSERT INTO public.athlete VALUES ('fred-rodriguez', 0, 'USA', 'Estados Unidos d
 INSERT INTO public.athlete VALUES ('ricardo-juarez', 0, 'USA', 'Estados Unidos da América', 'Boxe', 'discipline-boxe', 0, 'Ricardo JUAREZ', 1, 1, '/pt/atletas/ricardo-juarez');
 INSERT INTO public.athlete VALUES ('carla-moreno', 0, 'BRA', 'Brasil', 'Triatlo', 'discipline-triatlo', 0, 'Carla MORENO', 2, 0, '/pt/atletas/carla-moreno');
 INSERT INTO public.athlete VALUES ('brad-hauser', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Brad HAUSER', 1, 0, '/pt/atletas/brad-hauser');
+INSERT INTO public.athlete VALUES ('shane-gersich', 0, 'USA', 'Estados Unidos da América', 'Hóquei no gelo', 'discipline-hoquei-no-gelo', 0, 'Shane GERSICH', 0, 0, '/pt/atletas/shane-gersich');
+INSERT INTO public.athlete VALUES ('edwin-minney', 0, 'USA', 'Estados Unidos da América', 'Hóquei no gelo', 'discipline-hoquei-no-gelo', 0, 'Edwin MINNEY', 0, 0, '/pt/atletas/edwin-minney');
+INSERT INTO public.athlete VALUES ('logan-halladay', 0, 'USA', 'Estados Unidos da América', 'Hóquei no gelo', 'discipline-hoquei-no-gelo', 0, 'Logan HALLADAY', 0, 0, '/pt/atletas/logan-halladay');
+INSERT INTO public.athlete VALUES ('timi-earl', 0, 'USA', 'Estados Unidos da América', 'Skeleton', 'discipline-skeleton', 0, 'Timi EARL', 0, 0, '/pt/atletas/timi-earl');
+INSERT INTO public.athlete VALUES ('eric-jouti', 0, 'BRA', 'Brasil', 'Tênis de Mesa', 'discipline-tenis-de-mesa', 0, 'Eric JOUTI', 0, 0, '/pt/atletas/eric-jouti');
+INSERT INTO public.athlete VALUES ('julia-gerotto', 0, 'BRA', 'Brasil', 'Natação', 'discipline-natacao', 0, 'Julia GEROTTO', 0, 0, '/pt/atletas/julia-gerotto');
+INSERT INTO public.athlete VALUES ('arthur-malburg', 0, 'BRA', 'Brasil', 'Handebol', 'discipline-andebol', 0, 'Arthur MALBURG', 0, 0, '/pt/atletas/arthur-malburg');
+INSERT INTO public.athlete VALUES ('patricia-da-silva', 0, 'BRA', 'Brasil', 'Handebol', 'discipline-andebol', 0, 'Patricia DA SILVA', 0, 0, '/pt/atletas/patricia-da-silva');
+INSERT INTO public.athlete VALUES ('antony', 0, 'BRA', 'Brasil', 'Futebol', 'discipline-futebol', 0, ' ANTONY', 0, 0, '/pt/atletas/antony');
+INSERT INTO public.athlete VALUES ('jane-campbell', 0, 'USA', 'Estados Unidos da América', 'Futebol', 'discipline-futebol', 0, 'Jane CAMPBELL', 0, 0, '/pt/atletas/jane-campbell');
+INSERT INTO public.athlete VALUES ('paulo-andre-camilo', 0, 'BRA', 'Brasil', 'Atletismo', 'discipline-atletismo', 0, 'Paulo Andre CAMILO', 0, 0, '/pt/atletas/paulo-andre-camilo');
+INSERT INTO public.athlete VALUES ('lawrence-thomas-hart', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Lawrence Thomas HART', 1, 0, '/pt/atletas/lawrence-thomas-hart');
+INSERT INTO public.athlete VALUES ('samuel-linn-colson', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Samuel Linn COLSON', 1, 0, '/pt/atletas/samuel-linn-colson');
+INSERT INTO public.athlete VALUES ('robert-tomlinson-wheeler-iii', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Robert Tomlinson WHEELER III.', 1, 0, '/pt/atletas/robert-tomlinson-wheeler-iii');
+INSERT INTO public.athlete VALUES ('wendy-carol-koenig-knudson', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Wendy Carol KOENIG-KNUDSON', 2, 0, '/pt/atletas/wendy-carol-koenig-knudson');
+INSERT INTO public.athlete VALUES ('robenilson-vieira-de-jesus', 0, 'BRA', 'Brasil', 'Boxe', 'discipline-boxe', 0, 'Robenilson VIEIRA DE JESUS', 3, 0, '/pt/atletas/robenilson-vieira-de-jesus');
+INSERT INTO public.athlete VALUES ('edward-pennington-ballinger', 0, 'USA', 'Estados Unidos da América', 'Esgrima', 'discipline-esgrima', 0, 'Edward Pennington BALLINGER', 1, 0, '/pt/atletas/edward-pennington-ballinger');
+INSERT INTO public.athlete VALUES ('roseli-feitosa', 0, 'BRA', 'Brasil', 'Boxe', 'discipline-boxe', 0, 'Roseli FEITOSA', 1, 0, '/pt/atletas/roseli-feitosa');
+INSERT INTO public.athlete VALUES ('mary-killman', 0, 'USA', 'Estados Unidos da América', 'Nado Artístico', 'discipline-nado-sincronizado', 0, 'Mary KILLMAN', 1, 0, '/pt/atletas/mary-killman');
+INSERT INTO public.athlete VALUES ('max-pacioretty', 0, 'USA', 'Estados Unidos da América', 'Hóquei no gelo', 'discipline-hoquei-no-gelo', 0, 'Max PACIORETTY', 1, 0, '/pt/atletas/max-pacioretty');
+INSERT INTO public.athlete VALUES ('carolyn-steinseifer', 0, 'USA', 'Estados Unidos da América', 'Natação', 'discipline-natacao', 3, 'Carolyn STEINSEIFER', 1, 0, '/pt/atletas/carolyn-steinseifer');
+INSERT INTO public.athlete VALUES ('leigh-ann-fetter', 0, 'USA', 'Estados Unidos da América', 'Natação', 'discipline-natacao', 0, 'Leigh Ann FETTER', 1, 0, '/pt/atletas/leigh-ann-fetter');
+INSERT INTO public.athlete VALUES ('benjamin-funk', 0, 'USA', 'Estados Unidos da América', 'Boxe', 'discipline-boxe', 0, 'Benjamin FUNK', 1, 0, '/pt/atletas/benjamin-funk');
+INSERT INTO public.athlete VALUES ('whitney-l-hedgepeth', 0, 'USA', 'Estados Unidos da América', 'Natação', 'discipline-natacao', 1, 'Whitney L. HEDGEPETH', 2, 2, '/pt/atletas/whitney-l-hedgepeth');
+INSERT INTO public.athlete VALUES ('daniel-michael-cantore', 0, 'USA', 'Estados Unidos da América', 'Levantamento de Peso', 'discipline-levantamento-de-peso', 0, 'Daniel Michael CANTORE', 2, 0, '/pt/atletas/daniel-michael-cantore');
+INSERT INTO public.athlete VALUES ('david-herman', 0, 'USA', 'Estados Unidos da América', 'Ciclismo BMX Racing', 'discipline-ciclismo-bmx-racing', 0, 'David HERMAN', 1, 0, '/pt/atletas/david-herman');
+INSERT INTO public.athlete VALUES ('kayla-bashore-smedley', 0, 'USA', 'Estados Unidos da América', 'Hóquei sobre Grama', 'discipline-hoquei-sobre-grama', 0, 'Kayla BASHORE-SMEDLEY', 2, 0, '/pt/atletas/kayla-bashore-smedley');
+INSERT INTO public.athlete VALUES ('amy-tran-swensen', 0, 'USA', 'Estados Unidos da América', 'Hóquei sobre Grama', 'discipline-hoquei-sobre-grama', 0, 'Amy TRAN-SWENSEN', 2, 0, '/pt/atletas/amy-tran-swensen');
+INSERT INTO public.athlete VALUES ('martin-william-liquori', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Martin William LIQUORI', 1, 0, '/pt/atletas/martin-william-liquori');
+INSERT INTO public.athlete VALUES ('leandro-cunha', 0, 'BRA', 'Brasil', 'Judô', 'discipline-judo', 0, 'Leandro CUNHA', 1, 0, '/pt/atletas/leandro-cunha');
+INSERT INTO public.athlete VALUES ('kaye-marie-hall', 1, 'USA', 'Estados Unidos da América', 'Natação', 'discipline-natacao', 2, 'Kaye Marie HALL', 1, 0, '/pt/atletas/kaye-marie-hall');
+INSERT INTO public.athlete VALUES ('erin-blanchard', 0, 'USA', 'Estados Unidos da América', 'Ginástica de Trampolim', 'discipline-ginastica-de-trampolim', 0, 'Erin BLANCHARD', 1, 0, '/pt/atletas/erin-blanchard');
+INSERT INTO public.athlete VALUES ('chris-estrada', 0, 'USA', 'Estados Unidos da América', 'Ginástica de Trampolim', 'discipline-ginastica-de-trampolim', 0, 'Chris ESTRADA', 1, 0, '/pt/atletas/chris-estrada');
+INSERT INTO public.athlete VALUES ('robert-henry-christopherson', 0, 'USA', 'Estados Unidos da América', 'Boxe', 'discipline-boxe', 0, 'Robert Henry CHRISTOPHERSON', 1, 0, '/pt/atletas/robert-henry-christopherson');
+INSERT INTO public.athlete VALUES ('cody-mattern', 0, 'USA', 'Estados Unidos da América', 'Esgrima', 'discipline-esgrima', 0, 'Cody MATTERN', 1, 0, '/pt/atletas/cody-mattern');
+INSERT INTO public.athlete VALUES ('jason-rogers', 0, 'USA', 'Estados Unidos da América', 'Esgrima', 'discipline-esgrima', 0, 'Jason ROGERS', 2, 1, '/pt/atletas/jason-rogers');
+INSERT INTO public.athlete VALUES ('kelvin-hoefler', 0, 'BRA', 'Brasil', 'Skate', 'discipline-skateboarding', 0, 'Kelvin HOEFLER', 0, 1, '/pt/atletas/kelvin-hoefler');
+INSERT INTO public.athlete VALUES ('patrick-kivlehan', 0, 'USA', 'Estados Unidos da América', 'Beisebol Softbol', 'discipline-basebol-softbol', 0, 'Patrick KIVLEHAN', 0, 1, '/pt/atletas/patrick-kivlehan');
+INSERT INTO public.athlete VALUES ('eddy-alvarez', 0, 'USA', 'Estados Unidos da América', 'Beisebol Softbol', 'discipline-basebol-softbol', 0, 'Eddy ALVAREZ', 0, 1, '/pt/atletas/eddy-alvarez');
+INSERT INTO public.athlete VALUES ('taylor-ellis-watson', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 1, 'Taylor ELLIS-WATSON', 1, 0, '/pt/atletas/taylor-ellis-watson');
+INSERT INTO public.athlete VALUES ('mahau-suguimati', 0, 'BRA', 'Brasil', 'Atletismo', 'discipline-atletismo', 0, 'Mahau SUGUIMATI', 2, 0, '/pt/atletas/mahau-suguimati');
+INSERT INTO public.athlete VALUES ('christina-epps', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Christina EPPS', 1, 0, '/pt/atletas/christina-epps');
+INSERT INTO public.athlete VALUES ('solonei-da-silva', 0, 'BRA', 'Brasil', 'Atletismo', 'discipline-atletismo', 0, 'Solonei DA SILVA', 1, 0, '/pt/atletas/solonei-da-silva');
+INSERT INTO public.athlete VALUES ('tavis-bailey', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Tavis BAILEY', 1, 0, '/pt/atletas/tavis-bailey');
+INSERT INTO public.athlete VALUES ('pedro-luiz-de-oliveira', 0, 'BRA', 'Brasil', 'Atletismo', 'discipline-atletismo', 0, 'Pedro Luiz DE OLIVEIRA', 1, 0, '/pt/atletas/pedro-luiz-de-oliveira');
+INSERT INTO public.athlete VALUES ('heather-miller-koch', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Heather MILLER-KOCH', 1, 0, '/pt/atletas/heather-miller-koch');
+INSERT INTO public.athlete VALUES ('hugo-de-sousa', 0, 'BRA', 'Brasil', 'Atletismo', 'discipline-atletismo', 0, 'Hugo DE SOUSA', 1, 0, '/pt/atletas/hugo-de-sousa');
+INSERT INTO public.athlete VALUES ('flavia-de-lima', 0, 'BRA', 'Brasil', 'Atletismo', 'discipline-atletismo', 0, 'Flavia DE LIMA', 1, 0, '/pt/atletas/flavia-de-lima');
+INSERT INTO public.athlete VALUES ('alexander-russo', 0, 'BRA', 'Brasil', 'Atletismo', 'discipline-atletismo', 0, 'Alexander RUSSO', 1, 0, '/pt/atletas/alexander-russo');
+INSERT INTO public.athlete VALUES ('jeremy-taiwo', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Jeremy TAIWO', 1, 0, '/pt/atletas/jeremy-taiwo');
+INSERT INTO public.athlete VALUES ('blake-wheeler', 0, 'USA', 'Estados Unidos da América', 'Hóquei no gelo', 'discipline-hoquei-no-gelo', 0, 'Blake WHEELER', 1, 0, '/pt/atletas/blake-wheeler');
+INSERT INTO public.athlete VALUES ('jill-craybas', 0, 'USA', 'Estados Unidos da América', 'Tênis', 'discipline-tenis', 0, 'Jill CRAYBAS', 1, 0, '/pt/atletas/jill-craybas');
+INSERT INTO public.athlete VALUES ('sidney-a-freudenstein', 0, 'USA', 'Estados Unidos da América', 'Ginástica Artística', 'discipline-ginastica-artistica', 0, 'Sidney A. FREUDENSTEIN', 1, 0, '/pt/atletas/sidney-a-freudenstein');
+INSERT INTO public.athlete VALUES ('carly-patterson', 0, 'USA', 'Estados Unidos da América', 'Ginástica Artística', 'discipline-ginastica-artistica', 1, 'Carly PATTERSON', 1, 2, '/pt/atletas/carly-patterson');
+INSERT INTO public.athlete VALUES ('brianne-mclaughlin', 0, 'USA', 'Estados Unidos da América', 'Hóquei no gelo', 'discipline-hoquei-no-gelo', 0, 'Brianne MCLAUGHLIN', 2, 1, '/pt/atletas/brianne-mclaughlin');
+INSERT INTO public.athlete VALUES ('louie-vito', 0, 'USA', 'Estados Unidos da América', 'Snowboard', 'discipline-snowboard', 0, 'Louie VITO', 1, 0, '/pt/atletas/louie-vito');
+INSERT INTO public.athlete VALUES ('brooks-orpik', 0, 'USA', 'Estados Unidos da América', 'Hóquei no gelo', 'discipline-hoquei-no-gelo', 0, 'Brooks ORPIK', 2, 1, '/pt/atletas/brooks-orpik');
+INSERT INTO public.athlete VALUES ('benjamin-barger', 0, 'USA', 'Estados Unidos da América', 'Vela', 'discipline-vela', 0, 'Benjamin BARGER', 1, 0, '/pt/atletas/benjamin-barger');
+INSERT INTO public.athlete VALUES ('adam-wheeler', 1, 'USA', 'Estados Unidos da América', 'Wrestling Greco-Roman', 'discipline-wrestling-greco-roman', 0, 'Adam WHEELER', 1, 0, '/pt/atletas/adam-wheeler');
+INSERT INTO public.athlete VALUES ('rock-allen', 0, 'USA', 'Estados Unidos da América', 'Boxe', 'discipline-boxe', 0, 'Rock ALLEN', 1, 0, '/pt/atletas/rock-allen');
+INSERT INTO public.athlete VALUES ('ben-wildman-tobriner', 0, 'USA', 'Estados Unidos da América', 'Natação', 'discipline-natacao', 1, 'Ben WILDMAN-TOBRINER', 1, 0, '/pt/atletas/ben-wildman-tobriner');
+INSERT INTO public.athlete VALUES ('martin-nothstein', 0, 'USA', 'Estados Unidos da América', 'Ciclismo De Pista', 'discipline-ciclismo-de-pista', 1, 'Martin NOTHSTEIN', 3, 1, '/pt/atletas/martin-nothstein');
+INSERT INTO public.athlete VALUES ('chloe-sutton', 0, 'USA', 'Estados Unidos da América', 'Natação', 'discipline-natacao', 0, 'Chloe SUTTON', 2, 0, '/pt/atletas/chloe-sutton');
+INSERT INTO public.athlete VALUES ('carlos-eduardo-honorato', 0, 'BRA', 'Brasil', 'Judô', 'discipline-judo', 0, 'Carlos Eduardo HONORATO', 2, 1, '/pt/atletas/carlos-eduardo-honorato');
+INSERT INTO public.athlete VALUES ('heather-mitts', 0, 'USA', 'Estados Unidos da América', 'Futebol', 'discipline-futebol', 3, 'Heather MITTS', 3, 0, '/pt/atletas/heather-mitts');
+INSERT INTO public.athlete VALUES ('debora-nunes', 0, 'BRA', 'Brasil', 'Taekwondo', 'discipline-taekwondo', 0, 'Debora NUNES', 1, 0, '/pt/atletas/debora-nunes');
+INSERT INTO public.athlete VALUES ('marissa-castelli', 1, 'USA', 'Estados Unidos da América', 'Patinação artística', 'discipline-patinacao-artistica', 0, 'Marissa CASTELLI', 1, 0, '/pt/atletas/marissa-castelli');
+INSERT INTO public.athlete VALUES ('jeremy-barrett', 0, 'USA', 'Estados Unidos da América', 'Patinação artística', 'discipline-patinacao-artistica', 0, 'Jeremy BARRETT', 1, 0, '/pt/atletas/jeremy-barrett');
+INSERT INTO public.athlete VALUES ('nayara-figueira', 0, 'BRA', 'Brasil', 'Nado Artístico', 'discipline-nado-sincronizado', 0, 'Nayara FIGUEIRA', 2, 0, '/pt/atletas/nayara-figueira');
+INSERT INTO public.athlete VALUES ('washington-silva', 0, 'BRA', 'Brasil', 'Boxe', 'discipline-boxe', 0, 'Washington SILVA', 2, 0, '/pt/atletas/washington-silva');
+INSERT INTO public.athlete VALUES ('graham-watanabe', 0, 'USA', 'Estados Unidos da América', 'Snowboard', 'discipline-snowboard', 0, 'Graham WATANABE', 2, 0, '/pt/atletas/graham-watanabe');
+INSERT INTO public.athlete VALUES ('amy-rodriguez', 0, 'USA', 'Estados Unidos da América', 'Futebol', 'discipline-futebol', 2, 'Amy RODRIGUEZ', 2, 0, '/pt/atletas/amy-rodriguez');
+INSERT INTO public.athlete VALUES ('james-warren-moore', 0, 'USA', 'Estados Unidos da América', 'Pentatlo Moderno', 'discipline-pentatlo-moderno', 0, 'James Warren MOORE', 2, 1, '/pt/atletas/james-warren-moore');
+INSERT INTO public.athlete VALUES ('meryl-davis', 1, 'USA', 'Estados Unidos da América', 'Patinação artística', 'discipline-patinacao-artistica', 1, 'Meryl DAVIS', 2, 1, '/pt/atletas/meryl-davis');
+INSERT INTO public.athlete VALUES ('robert-willis-cannon', 0, 'USA', 'Estados Unidos da América', 'Atletismo', 'discipline-atletismo', 0, 'Robert Willis CANNON', 1, 0, '/pt/atletas/robert-willis-cannon');
 
 
 --
--- TOC entry 2988 (class 0 OID 16395)
+-- TOC entry 2988 (class 0 OID 16391)
 -- Dependencies: 201
 -- Data for Name: athlete_medal_search; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -2069,10 +2080,85 @@ INSERT INTO public.athlete_medal_search VALUES ('ricardo-juarez');
 INSERT INTO public.athlete_medal_search VALUES ('karol-damon');
 INSERT INTO public.athlete_medal_search VALUES ('carla-moreno');
 INSERT INTO public.athlete_medal_search VALUES ('brad-hauser');
+INSERT INTO public.athlete_medal_search VALUES ('lawrence-thomas-hart');
+INSERT INTO public.athlete_medal_search VALUES ('samuel-linn-colson');
+INSERT INTO public.athlete_medal_search VALUES ('robert-tomlinson-wheeler-iii');
+INSERT INTO public.athlete_medal_search VALUES ('wendy-carol-koenig-knudson');
+INSERT INTO public.athlete_medal_search VALUES ('robenilson-vieira-de-jesus');
+INSERT INTO public.athlete_medal_search VALUES ('edward-pennington-ballinger');
+INSERT INTO public.athlete_medal_search VALUES ('roseli-feitosa');
+INSERT INTO public.athlete_medal_search VALUES ('mary-killman');
+INSERT INTO public.athlete_medal_search VALUES ('max-pacioretty');
+INSERT INTO public.athlete_medal_search VALUES ('carolyn-steinseifer');
+INSERT INTO public.athlete_medal_search VALUES ('leigh-ann-fetter');
+INSERT INTO public.athlete_medal_search VALUES ('benjamin-funk');
+INSERT INTO public.athlete_medal_search VALUES ('whitney-l-hedgepeth');
+INSERT INTO public.athlete_medal_search VALUES ('daniel-michael-cantore');
+INSERT INTO public.athlete_medal_search VALUES ('david-herman');
+INSERT INTO public.athlete_medal_search VALUES ('kayla-bashore-smedley');
+INSERT INTO public.athlete_medal_search VALUES ('amy-tran-swensen');
+INSERT INTO public.athlete_medal_search VALUES ('martin-william-liquori');
+INSERT INTO public.athlete_medal_search VALUES ('leandro-cunha');
+INSERT INTO public.athlete_medal_search VALUES ('kaye-marie-hall');
+INSERT INTO public.athlete_medal_search VALUES ('erin-blanchard');
+INSERT INTO public.athlete_medal_search VALUES ('chris-estrada');
+INSERT INTO public.athlete_medal_search VALUES ('robert-henry-christopherson');
+INSERT INTO public.athlete_medal_search VALUES ('cody-mattern');
+INSERT INTO public.athlete_medal_search VALUES ('jason-rogers');
+INSERT INTO public.athlete_medal_search VALUES ('kelvin-hoefler');
+INSERT INTO public.athlete_medal_search VALUES ('ruth-hebard');
+INSERT INTO public.athlete_medal_search VALUES ('patrick-kivlehan');
+INSERT INTO public.athlete_medal_search VALUES ('ricardo-santos-1');
+INSERT INTO public.athlete_medal_search VALUES ('brittany-byrd');
+INSERT INTO public.athlete_medal_search VALUES ('jordyn-barratt');
+INSERT INTO public.athlete_medal_search VALUES ('eddy-alvarez');
+INSERT INTO public.athlete_medal_search VALUES ('gustavo-felipe');
+INSERT INTO public.athlete_medal_search VALUES ('natasha-cloud');
+INSERT INTO public.athlete_medal_search VALUES ('ricardo-alves');
+INSERT INTO public.athlete_medal_search VALUES ('filipe-toledo');
+INSERT INTO public.athlete_medal_search VALUES ('morgan-hurd');
+INSERT INTO public.athlete_medal_search VALUES ('michael-parsons');
+INSERT INTO public.athlete_medal_search VALUES ('taylor-ellis-watson');
+INSERT INTO public.athlete_medal_search VALUES ('mahau-suguimati');
+INSERT INTO public.athlete_medal_search VALUES ('christina-epps');
+INSERT INTO public.athlete_medal_search VALUES ('solonei-da-silva');
+INSERT INTO public.athlete_medal_search VALUES ('tavis-bailey');
+INSERT INTO public.athlete_medal_search VALUES ('pedro-luiz-de-oliveira');
+INSERT INTO public.athlete_medal_search VALUES ('heather-miller-koch');
+INSERT INTO public.athlete_medal_search VALUES ('hugo-de-sousa');
+INSERT INTO public.athlete_medal_search VALUES ('flavia-de-lima');
+INSERT INTO public.athlete_medal_search VALUES ('alexander-russo');
+INSERT INTO public.athlete_medal_search VALUES ('jeremy-taiwo');
+INSERT INTO public.athlete_medal_search VALUES ('ricardo-santos');
+INSERT INTO public.athlete_medal_search VALUES ('blake-wheeler');
+INSERT INTO public.athlete_medal_search VALUES ('jill-craybas');
+INSERT INTO public.athlete_medal_search VALUES ('sidney-a-freudenstein');
+INSERT INTO public.athlete_medal_search VALUES ('carly-patterson');
+INSERT INTO public.athlete_medal_search VALUES ('brianne-mclaughlin');
+INSERT INTO public.athlete_medal_search VALUES ('louie-vito');
+INSERT INTO public.athlete_medal_search VALUES ('brooks-orpik');
+INSERT INTO public.athlete_medal_search VALUES ('benjamin-barger');
+INSERT INTO public.athlete_medal_search VALUES ('adam-wheeler');
+INSERT INTO public.athlete_medal_search VALUES ('rock-allen');
+INSERT INTO public.athlete_medal_search VALUES ('ben-wildman-tobriner');
+INSERT INTO public.athlete_medal_search VALUES ('martin-nothstein');
+INSERT INTO public.athlete_medal_search VALUES ('chloe-sutton');
+INSERT INTO public.athlete_medal_search VALUES ('carlos-eduardo-honorato');
+INSERT INTO public.athlete_medal_search VALUES ('heather-mitts');
+INSERT INTO public.athlete_medal_search VALUES ('debora-nunes');
+INSERT INTO public.athlete_medal_search VALUES ('marissa-castelli');
+INSERT INTO public.athlete_medal_search VALUES ('jeremy-barrett');
+INSERT INTO public.athlete_medal_search VALUES ('nayara-figueira');
+INSERT INTO public.athlete_medal_search VALUES ('washington-silva');
+INSERT INTO public.athlete_medal_search VALUES ('graham-watanabe');
+INSERT INTO public.athlete_medal_search VALUES ('amy-rodriguez');
+INSERT INTO public.athlete_medal_search VALUES ('james-warren-moore');
+INSERT INTO public.athlete_medal_search VALUES ('meryl-davis');
+INSERT INTO public.athlete_medal_search VALUES ('robert-willis-cannon');
 
 
 --
--- TOC entry 2856 (class 2606 OID 16399)
+-- TOC entry 2856 (class 2606 OID 16395)
 -- Name: athlete_medal_search athlete_medal_search_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -2081,7 +2167,7 @@ ALTER TABLE ONLY public.athlete_medal_search
 
 
 --
--- TOC entry 2854 (class 2606 OID 16392)
+-- TOC entry 2854 (class 2606 OID 16397)
 -- Name: athlete athlete_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -2089,7 +2175,7 @@ ALTER TABLE ONLY public.athlete
     ADD CONSTRAINT athlete_pkey PRIMARY KEY (name_slug);
 
 
--- Completed on 2022-02-23 15:31:17 -03
+-- Completed on 2022-02-23 16:42:48 -03
 
 --
 -- PostgreSQL database dump complete
