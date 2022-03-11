@@ -2,6 +2,7 @@ package com.ordine.olympics.controllers;
 
 import com.ordine.olympics.model.olympics.dto.AthleteMedalsDTO;
 import com.ordine.olympics.model.olympics.dto.AthletesDTO;
+import com.ordine.olympics.model.response.Answers;
 import com.ordine.olympics.services.AthletesService;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -23,6 +24,11 @@ public class AthletesController {
   @GetMapping("/medals")
   public List<AthleteMedalsDTO> scrapeMedals() {
     return athletesService.scrapeAthletesMedals();
+  }
+
+  @GetMapping("/answers")
+  public Answers getAnswers() {
+    return athletesService.getAnswers();
   }
 
 }

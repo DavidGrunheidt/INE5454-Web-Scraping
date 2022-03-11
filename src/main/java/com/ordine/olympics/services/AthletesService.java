@@ -8,6 +8,7 @@ import com.ordine.olympics.model.db.AthleteMedalSearch;
 import com.ordine.olympics.model.olympics.dto.AthleteDTO;
 import com.ordine.olympics.model.olympics.dto.AthleteMedalsDTO;
 import com.ordine.olympics.model.olympics.dto.AthletesDTO;
+import com.ordine.olympics.model.response.Answers;
 import com.ordine.olympics.repository.AthleteMedalSearchRepository;
 import com.ordine.olympics.repository.AthleteRepository;
 import java.util.Arrays;
@@ -173,5 +174,36 @@ public class AthletesService {
                 .participationsCount(athlete.participationsCount)
                 .build())
         .collect(Collectors.toList());
+  }
+
+
+  public Answers getAnswers() {
+    final double percentageOfBrAthletlesWithMedals = athleteRepository.percentageOfAthletesWithMedals("BRA");
+    final double percentageOfUsaAthletlesWithMedals = athleteRepository.percentageOfAthletesWithMedals("USA");
+
+    final double percentageOfBrAthletlesWithGoldMedals = athleteRepository.percentageOfAthletesWithGoldMedals("BRA");
+    final double percentageOfUsaAthletlesWithGoldMedals = athleteRepository.percentageOfAthletesWithGoldMedals("USA");
+
+    final double brAthletesAverageOlympicsParticipation = athleteRepository.athletesAverageOlympicsParticipation("BRA");
+    final double usaAthletesAverageOlympicsParticipation = athleteRepository.athletesAverageOlympicsParticipation("USA");
+
+    final int brTotalSportsParticipation = athleteRepository.totalSportsParticipation("BRA");
+    final int usaTotalSportsParticipation = athleteRepository.totalSportsParticipation("USA");
+
+    final int brAthletesWithMedals = athleteRepository.totalOfAthletesWithMedals("BRA");
+    final int usaAthletesWithMedals = athleteRepository.totalOfAthletesWithMedals("USA");
+
+    return Answers.builder()
+        .percentageOfBrAthletlesWithMedals(percentageOfBrAthletlesWithMedals)
+        .percentageOfUsaAthletlesWithMedals(percentageOfUsaAthletlesWithMedals)
+        .percentageOfBrAthletlesWithGoldMedals(percentageOfBrAthletlesWithGoldMedals)
+        .percentageOfUsaAthletlesWithGoldMedals(percentageOfUsaAthletlesWithGoldMedals)
+        .brAthletesAverageOlympicsParticipation(brAthletesAverageOlympicsParticipation)
+        .usaAthletesAverageOlympicsParticipation(usaAthletesAverageOlympicsParticipation)
+        .brTotalSportsParticipation(brTotalSportsParticipation)
+        .usaTotalSportsParticipation(usaTotalSportsParticipation)
+        .totalOfBrAthletesWithMedals(brAthletesWithMedals)
+        .totalOfUsaAthletesWithMedals(usaAthletesWithMedals)
+        .build();
   }
 }
